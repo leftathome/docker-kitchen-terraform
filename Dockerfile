@@ -1,7 +1,7 @@
 FROM chef/chefdk:latest
 MAINTAINER leftathome@gmail.com
 ENTRYPOINT "/bin/sh"
-ARG TF_VERSION=0.10.7
+ARG TF_VERSION=0.11.5
 WORKDIR /tmp
 ADD Gemfile .
 RUN apt-get update && apt-get install -y unzip \
